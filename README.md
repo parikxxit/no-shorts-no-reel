@@ -14,12 +14,12 @@ A Chrome extension that blocks YouTube Shorts and Instagram Reels to help you st
 - Redirects you away from Shorts/Reels URLs
 
 ## Installation
-
 1. Download or clone this repository
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable "Developer mode" in the top right corner
 4. Click "Load unpacked" and select the directory containing the extension files
 5. The extension should now be installed and active
+## Later I'll setup developer account so that we can directly find it in the market place
 
 ## Usage
 
