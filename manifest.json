@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "No Shorts No Reels",
+  "version": "1.0",
+  "description": "TLDR; you can still use youtube and insta but can escape doom scrolling  YouTube Shorts and Instagram Reels I am trying to solve my infinite scrolling problem in my browser (I tried uninstalling native apps but now I am hooked on browser and I can't fully disable social media coz i watch lot of yt tutorial so i created this)",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.instagram.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.instagram.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
