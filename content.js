@@ -1,3 +1,8 @@
+const DEFAULT_URLS = {
+    YOUTUBE: 'https://www.youtube.com',
+    INSTAGRAM: 'https://www.instagram.com'
+};
+
 function blockYouTubeShorts() {
     const shortsLink = document.querySelector('a[href="/shorts"]');
     if (shortsLink) {
@@ -13,7 +18,7 @@ function blockYouTubeShorts() {
 
     // TODO: Rather then redirecting GIVE SOME STATIC Image that reminds to stop maybe something motivational
     if (window.location.pathname.startsWith('/shorts/')) {
-        window.location.href = 'https://www.youtube.com';
+        window.location.href = DEFAULT_URLS.YOUTUBE;
     }
 }
 
@@ -34,7 +39,7 @@ function blockInstagramReels() {
 
     // TODO: Rather then redirecting GIVE SOME STATIC Image that reminds to stop maybe something motivational
     if (window.location.pathname.startsWith('/reels/') || window.location.pathname.startsWith('/reel/')) {
-        window.location.href = 'https://www.instagram.com';
+        window.location.href = DEFAULT_URLS.INSTAGRAM;
     }
 }
 
